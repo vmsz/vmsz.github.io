@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinícius Mendes</title>
+  <link rel="stylesheet" href="./css/extends.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <script src="./js/index.js"></script>
+</head>
+<body>
+
+  <nav class="max-width font-size-medium bold uppercase">
+    <div class="desktop row align-center justify-center">
+      <a class="text" href="#home">Ínicio</a>
+      <a class="text margin-left-medium" href="#about">Sobre</a>
+      <a class="text margin-left-medium" href="#skills">Habilidades</a>
+      <a class="text margin-left-medium" href="#projects">Projetos</a>
+      <a class="text margin-left-medium" href="#contact">Contato</a>
+    </div>
+    <div class="mobile column align-end justify-center">
+      <img class="burger margin-right-medium" src="assets/buttons/menu.png" onclick="showMobileMenu()" alt="menu">
+      <div class="mobile_links column max-width align-center" style="display: none;">
+        <a class="text margin-top-big" href="#home">Ínicio</a>
+        <a class="text margin-top-big" href="#about">Sobre</a>
+        <a class="text margin-top-big" href="#skills">Habilidades</a>
+        <a class="text margin-top-big" href="#projects">Projetos</a>
+        <a class="text margin-top-big" href="#contact">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home row justify-center align-center wrap padding-big" id="home">
+    <div class="left_side column align-end uppercase">
+      <p class="text font-size-big margin-top-small">Olá, Sou</p>
+      <h1 class="highlighted-text font-size-extrabig bold margin-top-small">Vinícius Mendes</h1>
+      <p class="text font-size-big margin-top-small"">Desenvolvedor Full Stack</p>
+      <div class="button_area row margin-top-medium">
+        <div class="btn-primary github margin-right-small" onclick="window.open('https://github.com/vmsz', '_blank').focus()">
+          <img src="./assets/buttons/github.png" alt="">
+          <p class="text">GitHub</p>
+        </div>
+        <div class="btn-primary linkedin margin-left-small" onclick="window.open('https://www.linkedin.com/in/vin%C3%ADcius-mendes-764760254/', '_blank').focus()">
+          <img src="./assets/buttons/linkedin.png" alt="">
+          <p class="text">LinkedIn</p>
+        </div>
+      </div>
+    </div>
+    <div class="right_side margin-left-big">
+      <img id="avatar" src="./assets/avatar.png" alt="Avatar South Park">
+    </div>
+  </section>
+
+  <section class="about padding-medium row justify-center align-center wrap" id="about">
+    <div class="left_side">
+      <img src="./assets/about/me.png" alt="Minha Foto">
+    </div>
+    <div class="right_side column margin-left-medium">
+      <h1 class="highlighted-text font-size-big bold uppercase">Sobre Mim</h1>
+      <p class="text font-size-small justify-text margin-top-small">Olá! Meu nome é Vinícius, tenho 19 anos e sou um desenvolvedor web full stack que adora resolver problemas! Desde que mergulhei nesse mundo, tenho explorado tanto o front-end quanto o back-end, buscando sempre aprender e me desafiar. Estou em busca de oportunidades para iniciar minha colaboração em projetos profissionais. </p>
+      <div class="btn-primary margin-top-medium" onclick="window.open('./assets/about/curriculo.pdf','_blank').focus()">
+        <img src="./assets/buttons/portfolio.png" alt="">
+        <p class="text">Currículo</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills row wrap padding-medium align-center" id="skills">
+    <div class="left_side column text uppercase font-size-medium">
+      <p id="skills_text" class="highlighted-text bold" onclick="show('skills')">⮞ Habilidades</p>
+      <p class="margin-top-medium" id="studying_text" onclick="show('studying')">Cursando</p>
+      <p class="margin-top-medium" id="academic_text" onclick="show('academic')">Acadêmico</p>
+      <p class="margin-top-medium" id="language_text" onclick="show('language')">Idiomas</p>
+    </div>
+    <div class="right_side column">
+      <div class="skills_content row justify-center wrap" style="display: flex;">
+        <img src="./assets/skills/html.png" alt="HTML">
+        <img src="./assets/skills/css.png" alt="CSS">
+        <img src="./assets/skills/js.png" alt="JavaScript">
+        <img src="./assets/skills/php.png" alt="PHP">
+        <img src="./assets/skills/mysql.png" alt="MySQL">
+        <img src="./assets/skills/figma.png" alt="Figma">
+        <img src="./assets/skills/excel.webp" alt="Excel">
+      </div>
+      <div class="studying_content row justify-center wrap " style="display: none;">
+        <img src="./assets/skills/react.png" alt="React.js">
+        <img src="./assets/skills/node.svg" alt="Node.js">
+        <img src="./assets/skills/csharp.png" alt="C#">
+        <img src="./assets/skills/mongo.webp" alt="MongoDB">
+      </div>
+      <div class="academic_content column text" style="display: none;">
+        <div class="graduation column">
+          <p>2023-2026</p>
+          <h1>PUC Minas</h1>
+          <p>Tecnólogo em Sistemas para Internet (Cursando)</p>
+        </div>
+        <div class="graduation column margin-top-medium">
+          <p>2021-2022</p>
+          <h1>SENAI MG</h1>
+          <p>Curso Técnico em Informática para Internet</p>
+        </div>
+        <div class="graduation column margin-top-medium">
+          <p>2020 - 2022</p>
+          <h1>SESI Hamleto Magnavacca</h1>
+          <p>Ensino Médio</p>
+        </div>
+      </div>
+      <div class="language_content column text font-size-medium" style="display: none;">
+       <p>Português</p> 
+       <p class="margin-top-medium">Inglês (Intermediário)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects column padding-small align-center" id="projects">
+    <h1 class="highlighted-text bold uppercase font-size-big">Projetos</h1>
+    <div class="project_area row wrap max-width">
+      <div class="project column align-center">
+        <img src="./assets/projects/apphub.png" alt="Icone de Programas">
+        <h1 class="margin-top-medium highlighted-text bold font-size-medium uppercase">App Hub</h1>
+        <p class="margin-top-medium text font-size-small justify-text">Projeto feito para facilitar o download de programas, permitindo baixar vários programas essenciais e muito usados de uma vez.</p>
+        <p class="margin-top-medium highlighted-text bold font-size-small uppercase">HTML CSS JavaScript</p>
+        <div class="btn-primary margin-top-medium" onclick="window.open('https://vmsz.github.io/App-Hub/','_blank').focus()">
+          <img src="./assets/buttons/link.png" alt="">
+          <p class="text">Visitar</p>
+        </div>
+      </div>
+      <div class="project column align-center">
+        <img src="./assets/projects/pps.png" alt="Icone de executavel">
+        <h1 class="highlighted-text font-size-medium bold margin-top-medium uppercase">Process Priority Saver</h1>
+        <p class="text font-size-small margin-top-medium justify-text">Este projeto permite salvar a prioridade do processo desejado, salvando
+          sua prioridade diretamente no registro do Windows e melhorando sua performance.
+        </p>
+        <p class="highlighted-text bold font-size-small margin-top-medium uppercase">HTML CSS JavaScript</p>
+        <div class="btn-primary margin-top-medium" onclick="window.open('https://vmsz.github.io/Process-Priority-Saver/','_blank').focus()">
+          <img src="./assets/buttons/link.png" alt="">
+          <p class="text">Visitar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact row justify-center wrap padding-small" id="contact">
+    <div class="left_side">
+      <h1 class="highlighted-text font-size-big bold uppercase">Contatos</h1>
+      <div class="contact_method row margin-top-big text font-size-medium">
+        <img src="./assets/contact/email.png" alt="">
+        <p class="margin-left-small">viniciusmdsz@outlook.com</p>
+      </div>
+      <div class="contact_method row margin-top-medium text font-size-medium">
+        <img src="./assets/contact/whatsapp.png" alt="">
+        <p class="margin-left-small">+55 (31) 97360-2800</p>
+      </div>
+    </div>
+    <div class="right_side">
+      <img class="margin-left-medium" src="./assets/contact/logo.png" alt="">
+    </div>
+  </section>
+
+</body>
+</html>

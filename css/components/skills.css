@@ -1,0 +1,39 @@
+.skills{
+  background-color: var(--primary-background-tone);
+  justify-content: space-between;
+}
+.skills .left_side{
+  min-width: 25vw;
+  align-items: end;
+}
+.skills .right_side{
+  min-width: 60vw;
+  align-items: start;
+}
+.skills .left_side p{
+  cursor: pointer;
+}
+.skills .skills_content img, 
+.skills .studying_content img{
+  width: 96px;
+  height: 96px;
+  border-radius: 25px;
+  margin: 10px 10px 10px 10px;
+}
+.skills .highlighted-text {
+  animation: blinker 1.5s linear infinite;
+}
+.skills .academic_content{
+  height: 150px;
+}
+@media screen and (max-width:1090px) {
+  .skills .right_side{
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .skills .left_side{
+    width: 100%;
+    align-items: center;
+  }
+}

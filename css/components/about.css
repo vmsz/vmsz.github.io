@@ -1,0 +1,23 @@
+.about{
+  background-color: var(--secondary-background-tone);
+}
+.about .left_side img{
+  height: 256px;
+  border-radius: 10px;
+}
+.about .right_side p{
+  max-width: 500px;
+}
+.about .btn-primary img{
+  height: 25px;
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 780px) {
+.about .right_side{
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+}

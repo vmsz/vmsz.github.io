@@ -1,0 +1,32 @@
+.projects{
+  background-color: var(--secondary-background-tone);
+}
+.projects .project_area{
+  justify-content: space-around;
+}
+.projects .project{
+  margin-top: 100px;
+  padding: 0 50px 0 50px;
+}
+.projects .project img{
+  width: 150px;
+  height: 150px;
+}
+.projects .project_area p{
+  max-width: 400px;
+}
+.projects .project .btn-primary img{
+  height: 25px;
+  width: 25px;
+  margin: 0;
+}
+.projects .project .btn-primary p{
+  margin: 0;
+  font-weight: normal;
+  width: fit-content;
+}
+@media screen and (max-width:999px) {
+  .projects .project:not(:last-of-type){
+    margin-bottom: 50px
+  }
+}

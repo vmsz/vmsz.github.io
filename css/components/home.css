@@ -1,0 +1,54 @@
+.home{
+  background-color: var(--primary-background-tone);
+}
+.home .github img{
+  margin-bottom: 3px;
+}
+.home .linkedin img{
+  margin-bottom: 7px;
+}
+.home .right_side img{
+  animation: float 6s ease-in-out infinite;
+  height: 400px;
+}
+@media screen and (max-width:842px) {
+  .home{
+    padding: 150px 0px 150px;
+  }
+  .home p{
+    font-size: 24px;
+  }
+  .home h1{
+    font-size: 40px;
+  }
+  .home .btn-primary p{
+    font-size: 16px;
+  }
+  .home .right_side img{
+    height: 325px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width:659px) {
+  .home .left_side{
+    justify-content: center;
+    align-items: center;
+  }
+  .home .right_side{
+    margin: 0;
+  }
+}
+@media screen and (max-width:400px) {
+  .home .left_side h1{
+    font-size: 2rem;
+  }
+  .home .left_side p{
+    font-size: 1.2rem;
+  }
+  .home .btn-primary{
+    width: 140px;
+  }
+  .home .btn-primary p{
+    font-size: 16px;
+  }
+}

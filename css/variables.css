@@ -1,0 +1,7 @@
+:root {
+  --primary-background-tone: #111111;
+  --secondary-background-tone: #0e0e0e;
+  --color: linear-gradient(90deg, rgba(51,42,60,1) 0%, rgba(35,22,52,1) 100%);;
+  --text-color: #ffffff;
+  --font-family: 'Inter', sans-serif;
+}

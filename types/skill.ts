@@ -1,0 +1,16 @@
+export type Skill =
+  | 'html'
+  | 'css'
+  | 'tailwindcss'
+  | 'javascript'
+  | 'typescript'
+  | 'react'
+  | 'nextjs'
+  | 'nodejs'
+  | 'java'
+  | 'springboot'
+  | 'mysql'
+  | 'postgresql'
+  | 'mongodb'
+  | 'git'
+  | 'docker';
